@@ -1,0 +1,49 @@
+:root{
+    --cor-fundo: #0E1A12; /* Verde-escuro profundo, lembrando floresta à noite */
+    --cor-principal: #14281D; /* Verde musgo */
+    --cor-secundaria: #2B463C; /* Verde acinzentado */
+    --cor-destaque: #A7E3B2; /* Verde-claro suave para destaque */
+    --cor-texto: #E8FBEF; /* Branco-esverdeado */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid var(--cor-destaque);
+    box-shadow: 0 0 20px rgba(167, 227, 178, 0.3);
+    border-radius: 12px;
+}
+
+h1{
+    color: var(--cor-destaque);
+    text-shadow: 0 0 8px rgba(167, 227, 178, 0.5);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: scale(1.05);
+}
